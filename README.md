@@ -44,3 +44,9 @@ Add my_name variable with value
 ./terraform plan -var-file="my.tfvars"
 ./terraform apply -var-file="my.tfvars"
 ```
+# Step 3 : Allow Internet Access to Instance
+```
+git checkout step3
+./terraform apply -var-file="my.tfvars"
+```
+
