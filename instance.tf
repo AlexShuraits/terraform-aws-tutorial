@@ -25,6 +25,9 @@ resource "aws_instance" "instance" {
   key_name      = aws_key_pair.my_key.key_name
   associate_public_ip_address = true
   subnet_id = aws_subnet.subnet.id
+  vpc_security_group_ids = [
+    aws_security_group.ssh.id
+  ]
   tags = {
     Name = "${var.my_name} instance"
   }

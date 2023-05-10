@@ -33,3 +33,14 @@ cat ~/.ssh/id_rsa.pub
 ./terraform init
 ./terraform apply
 ```
+# Step 2 : Vars file && SSH access
+```
+git fetch --all --tags
+git checkout step2
+```
+Create my.tfvars file  
+Add my_name variable with value
+```
+./terraform plan -var-file="my.tfvars"
+./terraform apply -var-file="my.tfvars"
+```
