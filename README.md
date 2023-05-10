@@ -32,17 +32,16 @@ cat ~/.ssh/id_rsa.pub
 ```
 ./terraform init
 ./terraform apply
-```
-# Step 2 : Vars file && SSH access
-```
 git fetch --all --tags
 git checkout step2
 ```
+# Step 2 : Vars file && SSH access
 Create my.tfvars file  
 Add my_name variable with value
 ```
 ./terraform plan -var-file="my.tfvars"
 ./terraform apply -var-file="my.tfvars"
+git checkout step3
 ```
 # Step 3 : Allow Internet Access to Instance
 ```
