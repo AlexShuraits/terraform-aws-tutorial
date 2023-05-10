@@ -33,4 +33,5 @@ cat ~/.ssh/id_rsa.pub
 ./terraform init
 ./terraform apply
 git fetch --all --tags
+git checkout step2
 ```
