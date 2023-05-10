@@ -45,7 +45,6 @@ git checkout step3
 ```
 # Step 3 : Allow Internet Access to Instance
 ```
-git checkout step3
 ./terraform apply -var-file="my.tfvars"
 ```
 # Step 4 : Cleanup
