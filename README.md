@@ -49,4 +49,8 @@ Add my_name variable with value
 git checkout step3
 ./terraform apply -var-file="my.tfvars"
 ```
+# Step 4 : Cleanup
+```
+./terraform destroy -var-file="my.tfvars"
+```
 
